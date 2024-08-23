@@ -26,8 +26,6 @@ $riadok_hladaj=mysqli_fetch_assoc($vysledok_hladaj);
 		
 <?php
 		mysqli_close($dblink); //odpojim sa od databazy
-
-
 ?>
 
 </html>

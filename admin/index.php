@@ -3,24 +3,17 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-<?php include "head.php" ?>
-
-</head>
+<head><?php include "head.php" ?></head>
 
 <body>
 <?php
-
 include "config.php";  // konfiguracia
 include "lib.php";	//	funkcie    
-
-
-//define( '_VALID_MOS', 1 );
 include 'login.php';
 
-if (!isset($_SESSION['Login_Prihlasovacie_meno']) )  // nie je prihlaseny
+if (!isset($_SESSION['Login_Prihlasovacie_meno']) )  // Ak nie je pouzivatel prihlaseny tak exit
 {
-exit;
+	exit;
 }
 
 $dblink = mysqli_connect($mysql_server, $mysql_user, $mysql_password, $mysql_db); // pripojenie do databazy
@@ -28,10 +21,9 @@ $dblink = mysqli_connect($mysql_server, $mysql_user, $mysql_password, $mysql_db)
 include "navbar.php"; // navigacia
 
 if(ZistiPrava("Zobraz_objednavky",$dblink) == 0){ 
-echo "<p class='oznam'>Nemáte práva na zobrazenie objednavok.</p>";
-exit;
+	echo "<p class='oznam'>Nemáte práva na zobrazenie objednavok.</p>";
+	exit;
 }   
-
 
 $server=$_SERVER['HTTP_HOST'];
 if($_SERVER['HTTP_REFERER'] != "http://".$server.'/'.$dir_name."/admin/objednavka.php")  
@@ -70,10 +62,10 @@ if (!$dblink) { // kontrola ci je pripojenie na databazu dobre ak nie tak napise
 }
 
 $sql_pocet="SELECT count(1) as pocet_riadkov FROM objednavka"; // pocet vsetkych zaznamov
-$pocet_riadkov = zisti_pocet_riadkov($dblink,$sql_pocet);	
+$pocet_riadkov = zisti_pocet_riadkov($dblink,$sql_pocet);
+
 // limit na stranke je nastaveny v config.php
-if($skupina == 0 AND $Stav_objednavky == 0)
-{
+if($skupina == 0 AND $Stav_objednavky == 0){
 	$podmienka="";
 }	
 elseif($skupina)
@@ -105,8 +97,7 @@ elseif($Stav_objednavky)
 	
 }
 
-if($hladaj)	
-	{
+if($hladaj)	{
 	$hladaj2=str_replace( ' ','',$hladaj);  // vymaze vsetky medzery
     $podmienka.=" AND (o.ID_objednavky='$hladaj' OR o.Obj_Nazov_firmy LIKE '%$hladaj%'";  // vyhlada nazov firmy aj s medzerami napr. Firma s.r.o.
 	$podmienka.=" OR o.Obj_Meno LIKE '%$hladaj%' OR o.Obj_Priezvisko LIKE '%$hladaj%'  OR o.Obj_Mesto_fakturacna LIKE '%$hladaj%'"; // vyhlada meno alebo priezvisko alebo mesto
@@ -114,9 +105,7 @@ if($hladaj)
 	$sql_pocet="SELECT count(1) as pocet_riadkov FROM objednavka o WHERE 1 $podmienka";
     $pocet_riadkov = zisti_pocet_riadkov($dblink,$sql_pocet);	
     $limit=$pocet_riadkov; // limit na stranku budu vsetky zaznamy podla vyberu
-    }
-
-
+}
 
 ?>
 
@@ -158,14 +147,14 @@ if($hladaj)
 		</td>	
 		
 		<td style = "text-align:center !important; width:30%;">
-<?php
+		<?php
 			/* zamestnanci filter */			
 			$sql = "Select * FROM zamestnanec"; 
 			$vysledok=mysqli_query($dblink,$sql);
 			if (!$vysledok):
 				echo "Doslo k chybe pri vytvarani SQL dotazu !";
-			else:
-?>
+			else():
+			?>
 			<p><form action="index.php" method="post" >
 				Pridelený zamestnanec:
 				<select class = "select_height" name="skupina" onChange="forms[2].submit()">
@@ -176,7 +165,7 @@ if($hladaj)
 				</select>
 				<input type="hidden" name="hladaj" value="<?php echo $hladaj;?>">
 			</form></p>	
-			<?php endif; 	/* end zamestnanci filter */ ?>
+			<?php endif; /* end zamestnanci filter */ ?>
 		
 		</td>
 	</tr>
@@ -185,10 +174,10 @@ if($hladaj)
 <?php
 
 
-if (!$dblink) { // kontrola ci je pripojenie na db dobre ak nie tak napise chybu
+if (!$dblink) { // kontrola ci je pripojenie na db dobre ak nie tak vypise chybu
 	echo "Chyba pripojenia na DB!</br>";exit;
 } 
- // pripojenie na db je ok a mozeme pracovat s db
+
 
 	mysqli_set_charset($dblink, "utf8mb4"); // nastavit znakovu sadu.
 	
