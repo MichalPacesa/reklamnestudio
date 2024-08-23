@@ -1,0 +1,391 @@
+:root {
+  --red: #c42f2f;
+  --darkred: #c42f2f;
+  --sirka: 70%;
+  --sirka_login: 35%;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: black;
+  font-weight: 100;
+}
+
+form b
+{
+	font-weight: bold;
+}
+#tabulka td {
+
+  color: black;
+  font-weight: normal;
+}
+
+a {
+	text-decoration:none;  
+}
+a:link,a:visited,a:hover,a:active {
+  color: #000000;
+  font-weight: bold;
+}
+#sipky a {
+  color: white;
+}
+
+.button2{
+  margin-left: 10px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 15px;
+}
+p.text-grey
+{
+	color: #4f4f4f !important;
+}
+
+p.cervene {
+  font-weight: normal;
+  color: #d64161;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--sirka);
+  text-align: center-left;
+  background-color: #ffffff;
+  text-shadow: 0px 0px 0px;
+  margin-top: 1rem;
+}
+p.oznam{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--sirka);
+  margin-top: 1rem;
+ }
+ 
+.red 
+{ 
+font-weight: normal;
+color: #d64161!important;
+font-size: 15px;
+}
+
+.hviezdicka 
+{ 
+color:red;
+margin-left: 1px;
+text-weight: bold;
+}  	  						
+ 
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: var(--darkred);
+  border-collapse: collapse;
+  size: 15;
+  width: var(--sirka);	
+  padding: 100px 200px 25px 75px; /* top right bottom left*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: var(--darkred);
+  border-collapse: collapse;
+  font-size: 40px;
+  width: var(--sirka_login);	
+  padding: 100px 200px 25px 75px; /* top right bottom left*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 12rem;
+}
+
+#nadpis {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: #00ff00;
+  text-shadow: 2px 2px 2px #6b6b6b;
+}
+
+
+/*#filtre {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: var(--sirka);	
+}*/
+
+/*#zamestnanci {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: var(--sirka);	
+}*/
+
+.zoznam {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: var(--sirka);
+}
+
+.zoznam td, .zoznam th {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-left: 5px;
+  text-align: left;
+  padding: 8px 0px 12px 8px; /* top right bottom left*/ 
+}
+
+.zoznam th {
+  background-color: var(--darkred);
+  color: white;
+  border-collapse: collapse;
+}
+
+/* STARE FARBY RIADKOV
+.zoznam tr:nth-child(even){background-color: #f2f2f2;}
+
+.zoznam tr:nth-child(odd){background-color: #fff;}
+
+.zoznam tr:hover{background-color: #ddd;} 
+*/
+
+.zoznam tr:nth-child(even){background-color: #fafafa;}
+
+.zoznam tr:nth-child(odd){background-color: #ffffff;}
+
+.zoznam tr:hover{background-color: #f3f3f3;} 
+
+.zoznam input[type="text"],input[type="password"],input[type="number"],textarea 
+{
+	width:50%;
+}
+
+.login {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: var(--sirka_login);
+}
+
+.login td, .login th {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-left: 5px;
+  text-align: left;
+  font-size: 1.1rem;
+  /*STARE padding: 8px 0px 12px 8px; /* top right bottom left*/
+  padding: 20px 0px 25px 20px; /* top right bottom left*/
+   
+}
+
+.login th {
+  background-color: var(--darkred);
+  color: white;
+  border-collapse: collapse;
+}
+
+.login tr:nth-child(even){background-color: #fcfcfc;}
+
+.login tr:nth-child(odd){background-color: #ffffff;}
+
+.login tr:hover{background-color: #f7f7f7;} 
+
+
+.login input[type="text"],.login input[type="password"],.login input[type="number"]
+{
+	width:55%;
+}
+
+Chrome, Safari, Edge, Opera 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+Firefox 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.ZobrazitHeslo
+{
+	margin-bottom:2px;
+	margin-left:10px;
+	margin-right:7px;
+	vertical-align:middle;
+	width:18px;
+	height:18px;
+}
+
+.Checkbox
+{
+	vertical-align: middle;
+	width:18px;
+	height:18px;
+	margin-left:5px;
+}
+
+.vyber
+{
+height: 30px;
+width:50%;
+}
+
+#sipky 
+{
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	width: var(--sirka);
+}
+
+.siroky 
+{
+	width:250px;
+	white-space: nowrap;
+}
+
+.filter
+{
+	vertical-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.width-200{
+		width:200px;	
+		}
+	.width-300{
+		width:300px;	
+		}	
+	.width-400{
+		width:400px;	
+		}	
+	.width-500{
+		width:500px;	
+		}			
+	.height-250{
+		height:250px;	
+		}
+
+
+/* navigacia */
+	h4 {
+		 color:#db2424;
+		}
+	.btn-primary,a.btn-primary:link,a.btn-primary:hover,a.btn-primary:active,a.btn-primary:visited {
+	  background-color:#db2424!important;
+	  }
+	  
+	.navbar .nav-link {
+        color: #db2424!important;}
+	.navbar .nav-link:hover,.navbar .nav-link:active{
+        color: darkred!important;	
+		background:white !important;
+      }
+	
+	.nav-item {
+	  font-weight:500;
+	  margin-right: 1.25rem;
+	  }
+	  
+	
+	@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 1rem !important;
+		padding-left: 1rem !important;
+	}
+	.nav-item {
+		 margin-right: 0rem !important;
+			
+	}
+	#vedlajsie-menu{/*margin-left:-150px;*/}
+	}	
+
+	.bold {font-weight:bold;font-weight:500;}
+	  
+	.bg-image {
+		background-size: auto;	
+	   }
+	   
+	.logo {
+	   margin-left:-1rem;font-family: Roboto;font-style:italic;font-size:30px;
+	   }
+	.logo_a {
+	   margin-left:0rem;font-family: Roboto;font-style:italic; font-size:17px
+	   }
+	/*.logo, .logo a{
+			font-size: 1.25rem;
+			color: black !important;
+		}
+		.logo_a{
+			font-size: 1rem;
+			color: black !important;
+		}*/
+	   
+	   
+	.navbar-nav {
+	   margin-right: 5px;
+	   }
+	   
+	/* v admine sa nepouziva */
+	/*.biely {
+	    background:white;
+		width:100%;
+		height:8vh;
+		}*/
+	/*.medzera {
+			line-height: 2.5;
+		}*/
+		
+			
+		i.fas, i.fa-eye {
+			font-size: 2rem;
+			color: black !important;
+		}
+	/* koniec navigacia */	
+	
+	
+/* butony */
+.button,input.button { margin-right: 8px; background-color: var(--darkred); font-size: 18px; padding: 4px 10px; display: inline-block; text-decoration: none; color: #FFFFFF; border-radius: 3px; text-shadow: 2px 2px 2px #808080;}
+.button:hover,input.button:hover { background-color: #9e0000; text-shadow: 2px 2px 2px #6b6b6b; }
+.button:active,input.button:active { background-color: #f6ff00; text-shadow: 2px 2px 2px #6b6b6b; }
+
+.select_objednavka{
+	min-width:10rem;
+	height:30px;
+}
+
+.select_height{
+	height:30px;
+}
+
+.hlaska
+{
+	color: var(--darkred);
+	font-weight: bold;
+	width: var(--sirka_login);
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.vyber_btn
+{
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+		
