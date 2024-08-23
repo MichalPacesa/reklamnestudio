@@ -80,7 +80,7 @@ font-size: 15px;
 { 
 color:red;
 margin-left: 1px;
-text-weight: bold;
+
 }  	  						
  
 h1 {
@@ -213,12 +213,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-Firefox 
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-
 .ZobrazitHeslo
 {
 	margin-bottom:2px;
@@ -280,7 +274,7 @@ width:50%;
 		}
 
 
-/* navigacia */
+	/* navigacia */
 	h4 {
 		 color:#db2424;
 		}
@@ -310,7 +304,7 @@ width:50%;
 		 margin-right: 0rem !important;
 			
 	}
-	#vedlajsie-menu{/*margin-left:-150px;*/}
+	
 	}	
 
 	.bold {font-weight:bold;font-weight:500;}
