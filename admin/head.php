@@ -69,7 +69,7 @@ function ShowPassword() {
     <link rel="stylesheet" href="mdbootstrap/css/mdb.min.css" />
 
 	<style type="text/css">
-	<?php include "mystyle.css"; ?>
+	<?php include "css/mystyle.css"; ?>
 	
 	</style>
 	<script>
