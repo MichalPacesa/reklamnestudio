@@ -153,7 +153,7 @@ if($hladaj)	{
 			$vysledok=mysqli_query($dblink,$sql);
 			if (!$vysledok):
 				echo "Doslo k chybe pri vytvarani SQL dotazu !";
-			else():
+			else:
 			?>
 			<p><form action="index.php" method="post" >
 				Pridelený zamestnanec:
