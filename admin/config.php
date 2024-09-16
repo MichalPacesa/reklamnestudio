@@ -7,11 +7,6 @@ $mysql_db="reklamne_studio_michal_pacesa"; // meno databazy
 
 $dir_name="reklamnestudio"; // meno adresara v ktorom je system (hlavny web)
 
-$mail_od="michal.pacesa@www-stranky.sk";   // email odosielatela cenovej ponuky 
-$mail_smtp_server="smtp.www-stranky.sk"; //smtp server na odoslanie emailu
-$mail_smtp_server_login="michal.pacesa@www-stranky.sk"; // login do smtp mailu
-$mail_smtp_server_password="ReklamneStudio2022"; // heslo do smtp mailu
-
 $mail_komu="xpacesa@stuba.sk";   // email prijimatela cenovej ponuky (ak je prazdne posle sa email zakaznikovi)
 
 $limit=5; // kolko zaznamav chcem na stranke
