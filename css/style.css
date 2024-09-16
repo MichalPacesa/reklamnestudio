@@ -40,7 +40,7 @@ font-style:italic;
 font-size:27px;
 }
 		
-	@media (min-</div>: 1200px) {
+	@media (min-width: 1200px) {
 		div.obsah{
 		width: 1000px !important;
 		padding-left: 19rem;
@@ -137,10 +137,11 @@ font-size:27px;
 		#vedlajsie-menu
 		{
 		margin-left:-190px;
-		
-		
+	
 		}
-		#vedlajsie-menu li line-height: 20px; min-width:200px;
+		#vedlajsie-menu li{
+			line-height: 20px; min-width:200px;
+		} 
 		
 	}/* media 992px */
 	
@@ -277,7 +278,7 @@ width:50%;
 { 
 color:red;
 margin-left: 1px;
-text-weight: bold;
+font-weight: bold;
 }  
 
 p.text-grey
@@ -315,10 +316,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-Firefox 
-input[type=number] {
-  -moz-appearance: textfield;
-}
+
 	  
 	  
 	  
