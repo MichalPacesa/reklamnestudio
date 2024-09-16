@@ -48,7 +48,6 @@ font-size:27px;
 	} /* media 1200px */
 	
 	
-		
     @media (min-width: 992px) {
         #intro {
           margin-top: -110px;
@@ -66,7 +65,6 @@ font-size:27px;
 	} /*  media 992px */
 	
 	
-		
 	@media (max-width: 576px) {
         #intro {
 		  margin-top: -300px;
@@ -79,47 +77,50 @@ font-size:27px;
 			}
     }/* media 576px */
 		  
-	 	
+
     h4 {
 		 color:#db2424
-		}
+	}
+
 	.btn-primary,a.btn-primary:link,a.btn-primary:hover,a.btn-primary:active,a.btn-primary:visited {
 	  background-color:#db2424!important;
-	  }
-	  
+	}
+
 	.navbar .nav-link {
-        color: #db2424!important;}
+        color: #db2424!important;
+	}
+
 	.navbar .nav-link:hover,.navbar .nav-link:active{
         color: darkred!important;	
 		background:white !important;
-      }
+    }
 	  	
 	.nav-item {
 	  font-weight:500;
 	  margin-right: 1.25rem;
-	  }
+	}
 	  
 			  
 	.bg-image {
 		background-size: auto;	
-	   }
+	}
 	   
 	.logo {
 	   margin-left:0.8rem;
-	   }
+	}
 	   
 	.navbar-nav {
 	   margin-right: 5px;
-	   }
+	}
 	   
 	.biely {
 	    background:white;
 		width:100%;
 		height:8vh;
-		}
+	}
 	.medzera {
-			line-height: 2.5;
-		}
+		line-height: 2.5;
+	}
 		@media (min-width: 992px) {
 		.navbar-expand-lg .navbar-nav .nav-link {
 			padding-right: 0.5rem !important;
@@ -139,9 +140,7 @@ font-size:27px;
 		margin-left:-190px;
 	
 		}
-		#vedlajsie-menu li{
-			line-height: 20px; min-width:200px;
-		} 
+
 		
 	}/* media 992px */
 	
@@ -184,14 +183,6 @@ font-size:27px;
   color: white;
   border-collapse: collapse;
 }
-
-/* STARE FARBY RIADKOV
-.zoznam tr:nth-child(even){background-color: #f2f2f2;}
-
-.zoznam tr:nth-child(odd){background-color: #fff;}
-
-.zoznam tr:hover{background-color: #ddd;} 
-*/
 
 .zoznam tr:nth-child(even){background-color: #fafafa;}
 
