@@ -10,7 +10,7 @@ Zákazníci môžu okrem objednávania služieb v sídle firmy alebo telefonick�
 
 Návrh informačného systému bol vytvorený v jazyku UML. Implementovaný bol v jazykoch HTML, CSS, PHP a JavaScript. Použil som aj frameworky Bootstrap a jQuery.
 
-![alt text](https://michal.pacesa.sk/wp-content/uploads/2024/08/bakalarska-praca-1.png)
+![alt text](https://michal.pacesa.sk/wp-content/uploads/2024/08/bakalarska-praca-informacny-system-pre-reklamne-studio.webp)
 
 
 
